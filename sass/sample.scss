@@ -23,11 +23,62 @@
 // }
 
 // @media のネスト
-#main {
-	float: left;
-	width: 640px;
-	@media screen and (max-width: 640px) {
-		float: none;
-		width: auto;	
+// #main {
+// 	float: left;
+// 	width: 640px;
+// 	@media screen and (max-width: 640px) {
+// 		float: none;
+// 		width: auto;	
+// 	}
+// }
+
+// 親セレクタの参照 &（アンパサンド）
+// #side {
+// 	width: 240px;
+// 	body.top & {
+// 		width: 300px;
+// 	}
+// 	ul.bnr {
+// 		margin-bottom: 10px;
+// 	}
+// }
+
+// a {
+// 	text-decoration: none;
+// 	&:hover {
+// 		text-decoration: underline;
+// 	}
+// }
+
+// ul.pageNav {
+// 	li {
+// 		margin: 0;
+// 		width: 50%;
+// 		&.prev {
+// 			float: left;
+// 		}
+// 		&.next {
+// 			float: right;
+// 		}
+// 	}
+// }
+
+// .block {
+// 	width: 500px;
+// 	&__element {
+// 		margin-bottom: 2em;
+// 		&--modifier {
+// 			background-color: #f00;
+// 		}
+// 	}
+// }
+
+.block {
+	width: 500px;
+	& &__element {
+		margin-bottom: 2em;
+		&--modifier {
+			background-color: #f00;
+		}
 	}
 }
