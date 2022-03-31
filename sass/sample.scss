@@ -1,13 +1,13 @@
-#main {
-  width: 600px;
-  p {
-    margin: 0 0 1em;
-    em {
-      color: #f00;
-    }
-  }
-  small {
-    font-size: small;
-  }
+#main section {
+	margin-bottom: 50px;
+	h1 {
+		font-size: 140%;
+	}
+	p, ul {
+		margin-bottom: 1.5em;
+	}
+	p.notes {
+		color: red;
+	}
 }
 
