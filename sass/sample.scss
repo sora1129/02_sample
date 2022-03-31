@@ -1,3 +1,4 @@
+// ネストの基本
 // #main section {
 // 	margin-bottom: 50px;
 // 	h1 {
@@ -11,11 +12,22 @@
 // 	}
 // }
 
-#main  {
-	section + section {
-			margin-top: 50px;
-		}
-		section > h1 {
-			font-size: 140%;
-		}
+// 子孫セレクタ以外のセレクタを使うには
+// #main  {
+// 	section + section {
+// 			margin-top: 50px;
+// 		}
+// 		section > h1 {
+// 			font-size: 140%;
+// 		}
+// }
+
+// @media のネスト
+#main {
+	float: left;
+	width: 640px;
+	@media screen and (max-width: 640px) {
+		float: none;
+		width: auto;	
+	}
 }
