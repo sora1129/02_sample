@@ -21,8 +21,8 @@ exports.sass = series(cssSass);
 // });
 // watch(globs, [options], [task])
 
-exports.watch = () => {
-	watch('./sass/**/*.scss', series(cssSass));
+exports['sass-watch'] = () => {
+	watch(['./sass/**/*.scss'], series(cssSass));
 };
 
 // 初版・2刷の方へ
